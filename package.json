@@ -2,7 +2,7 @@
   "name": "@local/dsh-plugin-archive-sessions",
   "version": "1.0.0",
   "private": true,
-  "license": "MIT",
+  "license": "Apache-2.0",
   "description": "Archived-session browser for the DeepSeek Harness Web sidebar: a workspace-grouped archive list with search, one-click unarchive, and single or batch permanent deletion.",
   "type": "module",
   "main": "index.js",

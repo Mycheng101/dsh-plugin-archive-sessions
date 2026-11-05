@@ -57,8 +57,13 @@ src/host/errors.js     稳定错误码与 HTTP 状态
 client.js              浏览器端：sidebar.panellist + main 页面、搜索、批量选择、确认对话框
 locale/                插件市场元数据（中/英）
 icon.svg               插件图标
+LICENSE                Apache License 2.0
 ```
 
 ## 许可
 
-MIT
+本项目采用 [Apache License 2.0](LICENSE) 许可，SPDX 标识为 `Apache-2.0`。
+
+你可以自由使用、修改和分发本项目，包括商业用途；分发时请保留版权与许可声明，并遵守许可证中的专利与商标条款。
+
+Licensed under the [Apache License 2.0](LICENSE).
