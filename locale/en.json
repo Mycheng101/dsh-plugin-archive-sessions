@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Archived sessions",
+    "description": "A sidebar entry that opens the archived-session list grouped by workspace and ordered by recent activity, with search, unarchive, and single or batch permanent deletion."
+  }
+}

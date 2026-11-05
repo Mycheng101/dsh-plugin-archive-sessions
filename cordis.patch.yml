@@ -1,0 +1,6 @@
+# Bundle patch for the archive-sessions plugin. The row id and the npm name are
+# deliberately different from the shipped rows so installation never overrides
+# another plugin.
+- insert:
+    - id: archive-sessions
+      name: "@local/dsh-plugin-archive-sessions"
