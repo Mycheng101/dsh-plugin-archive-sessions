@@ -1,11 +1,27 @@
 {
-  "name": "@local/dsh-plugin-archive-sessions",
+  "name": "@mycheng/dsh-plugin-archive-sessions",
   "version": "1.0.0",
-  "private": true,
   "license": "Apache-2.0",
   "description": "Archived-session browser for the DeepSeek Harness Web sidebar: a workspace-grouped archive list with search, one-click unarchive, and single or batch permanent deletion.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "archived-sessions",
+    "session-management"
+  ],
+  "author": "Mycheng101",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mycheng101/dsh-plugin-archive-sessions.git"
+  },
+  "homepage": "https://github.com/Mycheng101/dsh-plugin-archive-sessions#readme",
+  "bugs": {
+    "url": "https://github.com/Mycheng101/dsh-plugin-archive-sessions/issues"
+  },
   "type": "module",
   "main": "index.js",
+  "icon": "./icon.svg",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -18,9 +34,16 @@
     "src/host/*.js",
     "cordis.patch.yml",
     "locale/*.json",
-    "icon.svg"
+    "icon.svg",
+    "README.md",
+    "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "engines": {
+    "node": ">=22.19.0",
     "dsh": ">=0.2.1-rc.3 <0.3.0-0"
   },
   "dsh": {

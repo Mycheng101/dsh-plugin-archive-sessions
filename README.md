@@ -37,13 +37,29 @@ DSH 没有公开的删除 API（`sessionController` 只有 list/create/rename/fo
 
 ## 安装
 
-本仓库通过插件管理器以本地目录安装（profile 内为链接）：
+把示例中的 `web` 换成实际启动的 profile 名（桌面版通常是 `desktop`），也可以直接在 Web 的「插件」页面安装。
+
+### 从 npm 安装
+
+```bash
+dsh plugin --profile web add @mycheng/dsh-plugin-archive-sessions
+```
+
+### 从 GitHub 安装
+
+```bash
+dsh plugin --profile web add github:Mycheng101/dsh-plugin-archive-sessions
+```
+
+### 本地开发
+
+本地开发时通过插件管理器以目录链接方式安装：
 
 ```text
 plugin_manager install_bundle  target: <本目录绝对路径>
 ```
 
-安装后需要刷新页面（或重启应用）让浏览器端 bundle 重新加载。
+安装或更新后需要刷新页面（或重启应用）让浏览器端 bundle 重新加载。
 
 ## 结构
 

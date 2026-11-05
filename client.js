@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: '@local/dsh-plugin-archive-sessions',
+  id: '@mycheng/dsh-plugin-archive-sessions',
   factory(require) {
     const React = require('react');
     const h = React.createElement;

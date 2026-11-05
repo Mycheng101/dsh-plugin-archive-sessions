@@ -3,4 +3,4 @@
 # another plugin.
 - insert:
     - id: archive-sessions
-      name: "@local/dsh-plugin-archive-sessions"
+      name: "@mycheng/dsh-plugin-archive-sessions"
