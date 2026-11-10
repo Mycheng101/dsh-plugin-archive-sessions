@@ -146,7 +146,7 @@ window.__ModuleLoader__.load({
       '.dac-searchInput::-webkit-search-cancel-button{display:none}',
       '.dac-searchClear{position:absolute;right:6px;display:flex;align-items:center;justify-content:center;width:20px;height:20px;padding:0;border:0;border-radius:50%;background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-secondary);font-size:13px;line-height:1;cursor:pointer}',
       '.dac-searchClear:hover{color:var(--dsw-alias-label-primary)}',
-      '.dac-toolbar{display:flex;align-items:center;gap:12px;padding:9px 14px;margin:0 0 18px;border:1px solid var(--dsw-alias-border-l1);border-radius:12px;background:var(--dsw-alias-bg-layer-1)}',
+      '.dac-toolbar{display:flex;align-items:center;gap:12px;padding:9px 14px;margin:0 0 18px;border:1px solid var(--dsw-alias-border-l1);border-radius:12px;background:var(--dsw-alias-bg-layer-1);flex-wrap:wrap}',
       '.dac-checkLabel{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--dsw-alias-label-primary);cursor:pointer;user-select:none}',
       '.dac-check{width:15px;height:15px;margin:0;accent-color:var(--dsw-alias-brand-primary);cursor:pointer;flex:none}',
       '.dac-toolbarCount{font-size:12px;color:var(--dsw-alias-label-secondary);font-variant-numeric:tabular-nums}',
@@ -740,13 +740,13 @@ window.__ModuleLoader__.load({
           }),
           h('span', null, t('toolbar.selectAll'))),
         h('span', { className: 'dac-toolbarCount' }, fill(t('toolbar.selected'), { count: selectedVisible.length })),
-        h('span', { className: 'dac-spacer' }),
         h('button', {
           type: 'button',
           className: 'dac-btn dac-btnDanger',
           disabled: selectedVisible.length === 0 || pending,
           onClick: () => askDelete(selectedVisible),
-        }, fill(t('toolbar.deleteSelected'), { count: selectedVisible.length })));
+        }, fill(t('toolbar.deleteSelected'), { count: selectedVisible.length })),
+        h('span', { className: 'dac-spacer' }));
 
       const renderRow = (sessionId) => {
         const info = byId[sessionId] ?? {};
