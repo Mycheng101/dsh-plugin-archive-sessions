@@ -1,6 +1,6 @@
 {
   "name": "@mycheng/dsh-plugin-archive-sessions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "Apache-2.0",
   "description": "Archived-session browser for the DeepSeek Harness Web sidebar: a workspace-grouped archive list with search, one-click unarchive, and single or batch permanent deletion.",
   "keywords": [
